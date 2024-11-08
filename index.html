@@ -12,6 +12,34 @@
       font-family: 'Poppins', sans-serif;
     }
 
+    .brand-gradient {
+      background: linear-gradient(90deg, #0066cc, #009988, #00cc66);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-link {
+      background: linear-gradient(90deg, #0066cc, #009988, #00cc66);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background: linear-gradient(90deg, #0066cc, #009988, #00cc66);
+      transition: width 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
     .card-img {
       height: 300px;
       object-fit: cover;
@@ -50,22 +78,21 @@
   </style>
 </head>
 <body class="overflow-x-hidden">
-  <header class="bg-blue-500 text-white py-4 fixed top-0 w-full z-50 overflow-hidden">
+  <header class="bg-white backdrop-blur-sm py-4 fixed top-0 w-full z-50 overflow-hidden shadow">
     <div class="container px-3 mx-auto flex justify-between items-center">
       <a href="./index.html" class="text-xl font-bold flex items-center">
-        <!-- <img src="/api/imageFx?prompt=savannah%20holdings%20logo&size=50x50" alt="Savannah Holdings LTD Logo" class="mr-2"> -->
-        Savannah Holdings Ltd
+        <img src="./images/logo.png" alt="Savannah Holdings LTD Logo" class="object-center object-contain w-60 md:w-64 h-auto">
       </a>
       <nav class="hidden md:block">
-        <ul class="flex space-x-4">
-          <li><a href="#about" class="hover:text-gray-300">About</a></li>
-          <li><a href="#services" class="hover:text-gray-300">Services</a></li>
-          <li><a href="#fuel-solutions" class="hover:text-gray-300">Fuel Solutions</a></li>
-          <li><a href="#contact" class="hover:text-gray-300">Contact Us</a></li>
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="nav-link font-semibold">About</a></li>
+          <li><a href="#services" class="nav-link font-semibold">Services</a></li>
+          <li><a href="#fuel-solutions" class="nav-link font-semibold">Fuel Solutions</a></li>
+          <li><a href="#contact" class="nav-link font-semibold">Contact Us</a></li>
         </ul>
       </nav>
       <button class="block md:hidden focus:outline-none">
-        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+        <svg class="h-6 w-6 fill-current text-gray-600" viewBox="0 0 24 24">
           <path fill-rule="evenodd" d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z" clip-rule="evenodd"></path>
         </svg>
       </button>

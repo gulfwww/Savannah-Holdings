@@ -40,7 +40,7 @@
 
     @media only screen and (max-width: 600px) {
       .hero {
-        height: 85vh;
+        height: 95vh;
       }
 
       .card-solutions {
@@ -49,8 +49,8 @@
     }
   </style>
 </head>
-<body>
-  <header class="bg-blue-500 text-white py-4 fixed top-0 w-full z-10">
+<body class="overflow-x-hidden">
+  <header class="bg-blue-500 text-white py-4 fixed top-0 w-full z-10 overflow-hidden">
     <div class="container px-3 mx-auto flex justify-between items-center">
       <a href="./index.html" class="text-xl font-bold flex items-center">
         <!-- <img src="/api/imageFx?prompt=savannah%20holdings%20logo&size=50x50" alt="Savannah Holdings LTD Logo" class="mr-2"> -->
@@ -73,21 +73,21 @@
   </header>
 
   <main>
-    <section class="hero bg-cover bg-center flex items-center justify-center relative" style="background-image: url('./images/hero.jpg');">
-      <div class="container mx-auto text-center text-white relative z-10">
-        <div class="w-full md:max-w-4xl lg:max-w-5xl mx-auto">
+    <section class="hero bg-cover bg-center flex items-center justify-center relative overflow-hidden" style="background-image: url('./images/hero.jpg');">
+      <div class="container mx-auto text-center text-white relative z-10 h-full">
+        <div class="flex flex-col justify-end items-center w-full md:max-w-4xl lg:max-w-5xl mx-auto h-full pb-12 md:pb-24">
           <!-- <h1 class="text-4xl font-bold mb-4 animate__animated animate__fadeInUp">Welcome to Savannah Holdings Ltd</h1> -->
-          <h1 class="text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeInUp">Securing Fuel Integrity, Protecting Revenue</h1>
-          <p class="text-lg leading-8 mb-8 animate__animated animate__fadeInUp animate__delay-0.5s">At Savannah Holdings, we specialize in advanced fuel marking technology to secure national fuel supplies, combat illicit trade, and protect government revenues. Through our Fuel Integrity Programmes, we work alongside governments and oil companies to ensure every drop of fuel is traceable, safe, and in compliance with international standards. Our robust solutions are trusted worldwide to maintain fuel quality, curb fraud, and foster transparency within the fuel industry.</p>
-          <a href="#about" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded animate__animated animate__fadeInUp animate__delay-1s">Learn More</a>
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 animate__animated animate__fadeInUp">Securing Fuel Integrity, Protecting Revenue</h1>
+          <p class="text-base md:text-lg leading-8 mb-8 animate__animated animate__fadeInUp animate__delay-0.5s">At Savannah Holdings, we specialize in advanced fuel marking technology to secure national fuel supplies, combat illicit trade, and protect government revenues. Through our Fuel Integrity Programmes, we work alongside governments and oil companies to ensure every drop of fuel is traceable, safe, and in compliance with international standards. Our robust solutions are trusted worldwide to maintain fuel quality, curb fraud, and foster transparency within the fuel industry.</p>
+          <a href="#about" class="hidden md:block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded animate__animated animate__fadeInUp animate__delay-1s">Learn More</a>
         </div>
       </div>
     </section>
 
-    <section id="about" class="about py-16 bg-gradient-to-r from-blue-500 to-green-500">
+    <section id="about" class="about py-16 bg-gradient-to-r from-blue-500 to-green-500 overflow-hidden">
       <div class="container px-3 mx-auto">
         <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
-          <div class="w-full md:w-1/2 pr-8 animate__animated animate__fadeInLeft">
+          <div class="w-full md:w-1/2 md:pr-8 animate__animated animate__fadeInLeft">
             <h2 class="text-3xl font-bold mb-4 text-white">About Savannah Holdings</h2>
             <p class="mb-4 leading-7 text-white">Savannah Holdings is a global leader in fuel integrity and marking solutions, dedicated to combating fuel fraud and securing fuel supplies. Through our innovative Fuel Integrity Programmes, we help governments and oil companies protect their revenue and maintain consumer trust. Our services encompass secure chemical markers, extensive field inspections, and a comprehensive tracing system that safeguards fuel quality and ensures compliance with environmental standards.</p>
             <p class="mb-4 leading-7 text-white">We are committed to providing a robust and eco-friendly approach to fuel authentication. Our programs detect and deter illegal practices like dilution, smuggling, and unauthorized rebranding, while our advanced analytics and real-time monitoring ensure rapid response to fraud. Savannah Holdings’ solutions benefit governments, oil companies, and consumers by contributing to environmental protection, supporting efficient tax collection, and delivering fuel of the highest quality.</p>
@@ -100,7 +100,7 @@
       </div>
     </section>
 
-    <section id="services" class="services bg-gray-100 py-16">
+    <section id="services" class="services bg-gray-100 py-16 overflow-hidden">
       <div class="container px-3 mx-auto">
         <h2 class="text-3xl font-bold mb-8 text-center animate__animated animate__fadeInDown">Our Comprehensive Services</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -135,7 +135,7 @@
       </div>
     </section>
 
-    <section id="fuel-solutions" class="fuel-solutions bg-white py-16">
+    <section id="fuel-solutions" class="fuel-solutions bg-white py-16 overflow-hidden">
       <div class="container px-3 mx-auto">
         <h2 class="text-3xl font-bold mb-8 text-center animate__animated animate__fadeInDown">Our Fuel Solutions</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-14">
@@ -163,7 +163,7 @@
       </div>
     </section>
 
-    <section id="contact" class="contact-section py-16 bg-gray-100">
+    <section id="contact" class="contact-section py-16 bg-gray-100 overflow-hidden">
       <div class="container px-3 mx-auto">
         <h2 class="text-3xl font-bold mb-8 text-center animate__animated animate__fadeInDown">Contact Us</h2>
         <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8">
